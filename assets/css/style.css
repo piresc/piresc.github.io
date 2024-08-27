@@ -81,3 +81,23 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   padding: 5px 15px;
   font-size: 0.9em;
 }
+
+.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid #252525;
+  color: #252525;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: #6e6e6e !important;
+  border-color: #6e6e6e !important;
+  color: #ffffff !important;
+  text-decoration: none;
+}
