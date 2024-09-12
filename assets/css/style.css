@@ -101,3 +101,17 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   color: #ffffff !important;
   text-decoration: none;
 }
+
+.project-title {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.project-details {
+  margin-left: 20px;
+  padding: 10px;
+  border-left: 2px solid #ccc;
+}
+.toggle-icon {
+  margin-left: 10px;
+}
