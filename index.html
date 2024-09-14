@@ -46,9 +46,11 @@
           <div class="col-md-12">
             <h2 class="h3 mb-4">About Me</h2>
             <p>
-            A results-driven Software Engineer with a proven track record of building scalable solutions, improving system efficiency, and
-collaborating with diverse teams to achieve significant project outcomes. Focused on delivering impactful and reliable software
-solutions while enhancing performance and streamlining processes.
+              A software engineer with over 3 years of experience, specializing in backend development. 
+              The focus is on designing and delivering efficient, reliable systems, overseeing projects from planning to deployment. 
+              Expertise includes improving system performance and optimizing processes to ensure smooth operations. 
+              With a strong understanding of the development cycle, the approach emphasizes quality, problem-solving, 
+              and continuous improvement, contributing effectively to the success of each project.
             </p>
             <h3 class="h5 mb-3 mt-5">Work Experience</h3>
             <ul class="timeline">
@@ -64,6 +66,66 @@ solutions while enhancing performance and streamlining processes.
                   <li>Collaborated with cross-functional teams for successful product releases.</li>
                   <li>implemented and optimized logging, monitoring and alerting.</li>
                 </ul>
+                <p><strong></strong></p>
+                <p>Key Projects:</p>
+                <ul>
+                  <li>
+                    <div class="project-title" onclick="toggleDropdown('fulfillmentDropdown')">
+                      Fulfillment Nextgen
+                      <span class="toggle-icon">▼</span>
+                    </div>
+                    <div id="fulfillmentDropdown" class="project-details" style="display: none;">
+                      <p>Fulfillment Nexgen is a project aimed at creating a new service that separates the fulfillment processes from old codebase. 
+                        This initiative was driven by the complexity and difficulty in maintaining the current codebase, which also caused multiple teams to work on the same code, 
+                        leading to challenges in debugging and integration testing.</p>
+                      <p><strong>Impact:</strong></p>
+                      <ul>
+                        <li>Development Efficiency: Reduced the time needed to develop new features.</li>
+                        <li>Testing Improvement: Simplified and expedited the integration testing process.</li>
+                        <li>Code Quality: Enhanced the readability and debugging of the code.</li>
+                        <li>Deployment Confidence: Enabled the team to deploy more confidently and efficiently.</li>
+                      </ul>
+                      <p><strong></strong></p>
+                      <p><strong>Strengths:</strong></p>
+                      <ul>
+                        <li>Development: Contribute on service creation, covering migration, architecture, and patterns.</li>
+                        <li>Message Queuing: Implemented queuing for async processing, throttling promos vs. orders.</li>
+                        <li>Custom Interceptors: Built gRPC and DB interceptors to monitor latency and query performance.</li>
+                        <li>DB Retrier: Developed a custom retrier to reduce master usage and prevent slave lag.</li>
+                        <li>Feature Migration: Led the migration of void and auto-frozen features.</li>
+                        <li>Query Reminder: Implemented automated checks to ensure future database partitions are prepared.</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="project-title" onclick="toggleDropdown('smartCardDropdown')">
+                      Smart-Card Auto Escalation
+                      <span class="toggle-icon">▼</span>
+                    </div>
+                    <div id="smartCardDropdown" class="project-details" style="display: none;">
+                      <p>Mandiri e-money is a leading smart-card payment method for digital services. According to Cex data, around 1% of users face errors when updating their card balance. These issues required manual support, wasting users' time and overburdening Tokopedia care. To resolve this, we developed an automated escalation feature.</p>
+                      <p><strong>Impact:</strong></p>
+                      <ul>
+                        <li>Support Efficiency: Automated escalation reduced customer support tickets by 60%.</li>
+                        <li>Cost Savings: Monthly savings reached tens of millions of rupiah through reduced operational costs.</li>
+                        <li>User Convenience: Users no longer had to manually report issues, improving their experience.</li>
+                      </ul>
+                      <p><strong></strong></p>
+                      <p><strong>Strengths:</strong></p>
+                      <ul>
+                        <li>Collaboration: Worked closely with cross-functional teams for seamless project support.</li>
+                        <li>Feedback Mechanisms: Implemented feedback emails, categorizing responses into different actions.</li>
+                        <li>Tech Advancements: Developed modular, reusable code and facilitated migration to new microservices.</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>Achieved a 200% CVR improvement by reducing agent inquiries and increasing cache usage.</li>
+                  <li>Improved order fulfillment latency from over 4 seconds to just over 1 second.</li>
+                  <li>Enhanced service reliability and scalability by implementing auto-scaling for cron jobs, eliminating SPOF.</li>
+                  <li>Streamlined the reconciliation process workflow for Kartu Prakerja.</li>
+                  <li>Reduced cloud costs by refactoring services into a monolithic architecture.</li>
+                  <li>Ensured smooth operations for the 2023 and 2024 Ramadan campaigns.</li>
+                </ul>
               </li>
               <li style="padding-bottom: 20px;">
                 <h4 class="h6">Software Engineer Intern</h4>
@@ -74,20 +136,105 @@ solutions while enhancing performance and streamlining processes.
                   <li>Applied CLEAN architecture for scalable services.</li>
                   <li>Managed B2B client integration.</li>
                   <li>Integrated with new billers to scale business growth.</li>
-                  <li>Selected from over 3,600 applicants to participate in DevCamp 2021.</li>
+                </ul>
+                <p><strong></strong></p>
+                <p>Key Projects:</p>
+                <ul>
+                  <li>
+                    <div class="project-title" onclick="toggleDropdown('selfOnboardingDropdown')">
+                      Partner Self-Onboarding
+                      <span class="toggle-icon">▼</span>
+                    </div>
+                    <div id="selfOnboardingDropdown" class="project-details" style="display: none;">
+                      <p>The Digital B2B team at Tokopedia needed a more efficient partner onboarding process. The manual process was time-consuming, involved multiple teams, and was prone to delays and errors. By introducing a self-onboarding feature, we streamlined the process, reduced manual work, and enabled faster, more reliable onboarding. This greatly improved operational efficiency.</p>
+                      <p><strong>Impact:</strong></p>
+                      <ul>
+                        <li>Reduced B2B client onboarding time by 80%.</li>
+                        <li>Cut integration time by 50%.</li>
+                        <li>Enabled partners to self-onboard, freeing up business, product, and tech teams.</li>
+                      </ul>
+                      <p><strong></strong></p>
+                      <p><strong>Strengths:</strong></p>
+                      <ul>
+                        <li>Tech Requirements: actively involved drafting of technological requirements for self-onboarding.</li>
+                        <li>Development: involved in the development process, building and integrating the feature.</li>
+                        <li>Testing: Conducted thorough testing and bug fixes, collaborating with QA to ensure feature stability.</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>Achieved a 200% CVR improvement by reducing agent inquiries and increasing cache usage.</li>
+                  <li>Improved order fulfillment latency from over 4 seconds to just over 1 second.</li>
+                  <li>Enhanced service reliability and scalability by implementing auto-scaling for cron jobs, eliminating SPOF.</li>
+                  <li>Streamlined the reconciliation process workflow for Kartu Prakerja.</li>
+                  <li>Reduced cloud costs by refactoring services into a monolithic architecture.</li>
+                  <li>Ensured smooth operations for the 2023 and 2024 Ramadan campaigns.</li>
+                </ul>
+              </li>
+              <li style="padding-bottom: 20px;">
+                <h4 class="h6">DevCamp 2021 Participant</h4>
+                <p>Tokopedia | 2021</p>
+                <ul>
+                  <li>Selected from over 3,600 applicants to participate in DevCamp's 6 day boot camp.</li>
                   <li>Engaged in intensive training and received direct mentorship from Tokopedia tech experts.</li>
-                  <li>Contributed to a 20-hour hackathon, earning an internship at Tokopedia.</li>
+                  <li>Contributed to a 20 hour hackathon, earning an internship at Tokopedia.</li>
                 </ul>
               </li>
               <li style="padding-bottom: 20px;">
                 <h4 class="h6">Developer</h4>
                 <p>Apple Developer Academy | 2020</p>
+                <p>The Apple Developer Academy @ BINUS is the first-ever initiative in Asia to empower Indonesia's economy by creating world-class developers for the world's most innovative and vibrant app ecosystem.</p>
                 <ul>
-                  <li>Selected as one of 200 individuals from over 2500+ applicants.</li>
-                  <li>Built 7 apps, serving roles such as junior developer, product owner, and UI/UX designer.</li>
-                  <li>Worked on two macro projects, Videre (Mumu) and Lugna, simultaneously for three months.</li>
-                  <li>Developed Videre, an app for visual artists, adding AR functionality for artwork arrangement.</li>
-                  <li>Designed UI/UX for Lugna, conducting research with mental health patients and experts.</li>
+                  <li>Selected as one of 200 individuals from over 2500+ applicants across Indonesia.</li>
+                  <li>Built 7 apps, taking on roles such as junior developer, product owner, and UI/UX designer.</li>
+                  <li>Joined and contributed to the development of two macro projects, Videre (Mumu) and Lugna, simultaneously for three months.</li>
+                </ul>
+                <p><strong></strong></p>
+                <p>Key Projects:</p>
+                <ul>
+                  <li>
+                    <div class="project-title" onclick="toggleDropdown('lugnaDropdown')">
+                      Lugna Smart Journaling App
+                      <span class="toggle-icon">▼</span>
+                    </div>
+                    <div id="lugnaDropdown" class="project-details" style="display: none;">
+                      <p>Lugna is a smart journaling app that enables users to pour their thoughts and feelings through journaling, which can be used as a form of communication between patients, caregivers, and psychiatrists. Lugna has personalized questions to guide users in journaling. Lugna also has stats to give overviews on users' moods weekly and monthly.</p>
+                      <p><strong>Impact:</strong></p>
+                      <ul>
+                        <li>Mental Health Support: Improved the journaling process, allowing users to better communicate their thoughts and emotions with caregivers and psychiatrists.</li>
+                        <li>User Engagement: Personalized questions guided users through journaling, leading to increased user interaction and more meaningful entries.</li>
+                        <li>Mood Tracking: Enabled users to track and understand their moods through weekly and monthly stats, contributing to better self-awareness and mental health management.</li>
+                      </ul>
+                      <p><strong></strong></p>
+                      <p><strong>Strengths:</strong></p>
+                      <ul>
+                        <li>Research: Conducted interviews with mental health patients and experts to inform design decisions.</li>
+                        <li>UI/UX Design: Designed intuitive interfaces for iPhone, iPad, and the web.</li>
+                        <li>Testing: Led user testing to validate usability and effectiveness.</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="project-title" onclick="toggleDropdown('videreMumuDropdown')">
+                      Videre/Mumu AR App
+                      <span class="toggle-icon">▼</span>
+                    </div>
+                    <div id="videreMumuDropdown" class="project-details" style="display: none;">
+                      <p>Videre is an app that helps visual artists visualize and measure grid and artwork arrangements using Augmented Reality (AR). It is an advanced evolution of MUMU, which was originally developed to assist mural artists by simplifying the process of calculating grid sizes and overlaying them on reference designs with AR. Videre expands on these capabilities, offering an upgraded experience with enhanced creative tools and more advanced features for all visual artists.</p>
+                      <p><strong>Impact:</strong></p>
+                      <ul>
+                        <li>Creative Process Enhancement: Streamlined the process for visual and mural artists, reducing the time and effort required for grid calculation and design visualization.</li>
+                        <li>Increased Productivity: Enabled artists to easily arrange artwork using AR, improving their workflow and precision.</li>
+                        <li>Tool Adoption: Provided advanced creative tools, leading to broader adoption among various types of visual artists.</li>
+                      </ul>
+                      <p><strong></strong></p>
+                      <p><strong>Strengths:</strong></p>
+                      <ul>
+                        <li>Development: Implemented MVC architecture, camera functions, and AR features.</li>
+                        <li>AR Integration: Improved the user experience by incorporating augmented reality.</li>
+                        <li>Cloud Integration: Built cloud save functionality using Core Data with CloudKit.</li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -98,178 +245,6 @@ solutions while enhancing performance and streamlining processes.
                 <h4 class="h6">Bachelor of Computer Science</h4>
                 <p>Binus University | 2017-2021 | GPA: 3.17</p>
                 <p>Thesis: iOS based guided mental health journaling application</p>
-              </li>
-            </ul>
-            
-            <h3 class="h5 mb-3 mt-5">Projects</h3>
-            <ul class="projects-list">
-              <li>
-                <div class="project-title" onclick="toggleDropdown('fulfillmentDropdown')">
-                  Fulfillment Nextgen
-                  <span class="toggle-icon">▼</span>
-                </div>
-                <div id="fulfillmentDropdown" class="project-details" style="display: none;">
-                  <p>Fulfillment Nexgen is a project aimed at creating a new service that separates the fulfillment processes from the old codebase. This initiative was driven by the complexity and difficulty in maintaining the current codebase, which also caused multiple teams to work on the same code, leading to challenges in debugging and integration testing.</p>
-                  <p><strong>Impact:</strong></p>
-                  <ul>
-                    <li>Development Efficiency: Reduced the time needed to develop new features.</li>
-                    <li>Testing Improvement: Simplified and expedited the integration testing process.</li>
-                    <li>Code Quality: Enhanced the readability and debugging of the code.</li>
-                    <li>Deployment Confidence: Enabled the team to deploy more confidently and efficiently.</li>
-                  </ul>
-                  <p><strong></strong></p>
-                  <p><strong>Strengths:</strong></p>
-                  <ul>
-                    <li>Comprehensive Involvement: Played a crucial role in the discussions regarding proper ways to create new services, including aspects like migration, architecture, and pattern.</li>
-                    <li>Message Queuing Implementation: Implemented message queuing in the new fulfillment service to ensure asynchronous and distributed processing, throttling requests to differentiate between promos and orders.</li>
-                    <li>Custom gRPC and DB Interceptors: Created custom gRPC and database interceptors for monitoring latency, host, and query performance.</li>
-                    <li>Custom DB Retrier: Developed a custom retrier for databases to minimize master usage and eliminate any slave lag.</li>
-                    <li>Void Feature Migration Planning: Planned and strategized the migration of the void feature, ensuring compatibility between old and new systems.</li>
-                    <li>Auto-Frozen Feature Migration: Migrated the auto-frozen feature to minimize failed orders by temporarily disabling affected products.</li>
-                    <li>Query Reminder Implementation: Implemented a query reminder to check database partitions, ensuring partitions are created for the upcoming months.</li>
-                  </ul>
-                </div>
-              </li>
-              
-              <li>
-                <div class="project-title" onclick="toggleDropdown('smartCardDropdown')">
-                  Smart-Card Auto Escalation
-                  <span class="toggle-icon">▼</span>
-                </div>
-                <div id="smartCardDropdown" class="project-details" style="display: none;">
-                  <p>Mandiri e-money is a top transaction method for smart-cards in digital services. According to Cex data, about 1% of users encounter an error when trying to update the balance on their cards. These errors resulted in significant wasted time for users who had to seek support from Tokopedia care, as each issue required manual assistance from the support team. To address this, an automated escalation feature was developed to handle these issues more efficiently.</p>
-                  <p><strong>Impact:</strong></p>
-                  <ul>
-                    <li>Customer Support Efficiency: Automated issue escalation led to a 60% drop in customer support tickets, significantly reducing the workload on the support team.</li>
-                    <li>Cost Savings: The automation process resulted in monthly savings up to tens of millions of rupiah, reflecting reduced operational costs and increased efficiency.</li>
-                    <li>User Convenience: Users benefited from the time saved as they no longer needed to manually report issues, enhancing their overall experience with the service.</li>
-                  </ul>
-                  <p><strong></strong></p>
-                  <p><strong>Strengths:</strong></p>
-                  <ul>
-                    <li>Collaborative Efforts: Successfully collaborated across multiple teams, including customer experience, help page, and bot teams, ensuring comprehensive coverage and support for the project.</li>
-                    <li>Implementation of Feedback Mechanisms: Implemented post-issue feedback emails, categorized into refund requests, need for updates, and confirmation of updates, to keep users informed and engaged.</li>
-                    <li>Technological Advancements: The implementation code was designed to be abstract, ensuring it could be adapted and implemented across various other smart card products, enhancing the system's versatility and scalability. Additionally, facilitated the migration to NextGen services, incorporating new features into the existing system, such as reading .xlsx files and email integration.</li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <div class="project-title" onclick="toggleDropdown('selfOnboardingDropdown')">
-                  Partner Self-Onboarding
-                  <span class="toggle-icon">▼</span>
-                </div>
-                <div id="selfOnboardingDropdown" class="project-details" style="display: none;">
-                  <p>The Digital B2B team at Tokopedia needed a more efficient way to onboard partners. At that time, the onboarding process was entirely manual, requiring significant involvement from the business, product, and tech teams. This process was not only time-consuming but also prone to delays and errors due to its dependency on multiple teams. By creating a self-onboarding feature, we aimed to streamline this process, reducing manual work and enabling faster, more reliable partner onboarding.
-                  The self-onboarding feature significantly improved operational efficiency:</p>
-                  <p><strong>Impact:</strong></p>
-                  <ul>
-                    <li>Reduced B2B client onboarding time by 80%.</li>
-                    <li>Cut integration time by 50%.</li>
-                    <li>Allowed partners to complete the onboarding process independently, freeing up resources from the business, product, and tech teams for other critical tasks.</li>
-                  </ul>
-                  <p><strong></strong></p>
-                  <p><strong>Strengths:</strong></p>
-                  <ul>
-                    <li>Drafting Technology Requirements: I was actively involved in identifying and drafting the necessary technological requirements for the self-onboarding feature.</li>
-                    <li>Development: I was involved in the development process, ensuring that the feature was built according to specifications and integrated seamlessly with existing systems.</li>
-                    <li>Testing and Bug Bashing: Post-release, I conducted extensive testing and bug bashing to ensure the feature was stable and met user expectations. This involved working closely with QA teams and responding to feedback promptly to resolve any issues that arose.</li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <div class="project-title" onclick="toggleDropdown('latencyOptimizationDropdown')">
-                  Latency Optimization
-                  <span class="toggle-icon">▼</span>
-                </div>
-                <div id="latencyOptimizationDropdown" class="project-details" style="display: none;">
-                  <p>This project aimed to optimize the latency of electricity order fulfillment by enhancing the inquiry process and implementing an improved caching system. The business requested that the latency be reduced to below 1 second to attract new clients.</p>
-                  <p><strong>Impact:</strong></p>
-                  <ul>
-                    <li>Processing Time Reduction: Reduced order fulfillment latency by over 75%, cutting processing times from over 4 seconds to just over 1 second.</li>
-                    <li>Customer Experience: Enhanced the customer experience with smoother and faster transactions.</li>
-                    <li>System Efficiency: Improved system efficiency by reducing overhead during peak order processing times.</li>
-                    <li>New Business Partner Acquisition: Successfully attracted new clients by meeting the required latency performance goals.</li>
-                  </ul>
-                  <p><strong></strong></p>
-                  <p><strong>Strengths:</strong></p>
-                  <ul>
-                    <li>Profiling and Optimization: Led efforts to profile the service and identify bottlenecks in database queries and third-party API calls.</li>
-                    <li>Query Optimization: Collaborated with the team to optimize query execution plans, eliminating unnecessary queries.</li>
-                    <li>Monitoring Tools: Developed custom dashboards to monitor real-time fulfillment times and quickly address performance issues.</li>
-                    <li>Caching Implementation: Reduced API call dependency by implementing a caching system, cutting API response times from up to 1 second to below 1 millisecond by retrieving data from the cache.</li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <div class="project-title" onclick="toggleDropdown('cvrImprovementDropdown')">
-                  Conversion Rate (CVR) Improvement
-                  <span class="toggle-icon">▼</span>
-                </div>
-                <div id="cvrImprovementDropdown" class="project-details" style="display: none;">
-                  <p>This project focused on optimizing backend processes and improving cache utilization to prevent the loss of potential and established suppliers, with the goal of increasing conversion rate inquiries.</p>
-                  <p><strong>Impact:</strong></p>
-                  <ul>
-                    <li>Increased Conversions: Successfully increased customer conversion rates by 200%, driving more revenue and boosting user engagement.</li>
-                    <li>Reduced Agent Workload: Decreased the number of inquiries requiring human intervention by resolving issues with automation and system improvements.</li>
-                  </ul>
-                  <p><strong></strong></p>
-                  <p><strong>Strengths:</strong></p>
-                  <ul>
-                    <li>Cache Optimization: Reduced the load on the database by leveraging cache layers for frequently accessed data, cutting down response times and improving the user experience.</li>
-                    <li>Customer Inquiry System: Worked on improving the system that handles customer inquiries, reducing the number of escalations to support agents.</li>
-                    <li>Error Rate Reduction: Optimized error handling in order processing to reduce inquiry rates related to failed or delayed transactions.</li>
-                    <li>Tech-Ops Collaboration: Collaborated closely with the Tech-Ops team to develop runbooks and solutions that automated the resolution of common inquiry issues.</li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <div class="project-title" onclick="toggleDropdown('kartuPrakerjaDropdown')">
-                  Kartu Prakerja
-                  <span class="toggle-icon">▼</span>
-                </div>
-                <div id="kartuPrakerjaDropdown" class="project-details" style="display: none;">
-                  <p>Aimed at improving the workflow of the Kartu Prakerja project, this initiative focused on resolving issues with failed processes and developing proper documentation for Tech-Ops support.</p>
-                  <p><strong>Impact:</strong></p>
-                  <ul>
-                    <li>Faster Resolutions: Reduced the time taken to resolve failed processes through the implementation of a manual reconciliation process.</li>
-                    <li>Tech-Ops Enablement: Developed comprehensive Technical Requirement Documents (TRD) and runbooks, empowering the Tech-Ops team to troubleshoot and resolve issues without needing root access.</li>
-                    <li>Improved Accuracy: Eliminated the need for manual database access by automating reconciliation and root cause analysis of failed transactions.</li>
-                  </ul>
-                  <p><strong></strong></p>
-                  <p><strong>Strengths:</strong></p>
-                  <ul>
-                    <li>Reconciliation Process: Created a manual reconciliation process to resolve failed transactions, allowing non-technical staff to handle issues without deep technical expertise.</li>
-                    <li>Documentation: Led the creation of runbooks and TRD documentation that detailed the step-by-step resolution of common issues.</li>
-                    <li>Automation Tools: Automated the reconciliation and validation of failed processes, drastically reducing the time needed to recover from failures.</li>
-                    <li>Root Access Elimination: Improved system security by eliminating the need for root access to debug or fix issues, allowing for safer and faster troubleshooting by Tech-Ops.</li>
-                  </ul>
-                </div>
-              </li>
-
-              <li>
-                <div class="project-title" onclick="toggleDropdown('ramadanCampaignsDropdown')">
-                  Ramadan Campaigns
-                  <span class="toggle-icon">▼</span>
-                </div>
-                <div id="ramadanCampaignsDropdown" class="project-details" style="display: none;">
-                  <p>Contributed to the success of the 2023 and 2024 Ramadan campaigns by automating manual workflows and collaborating with frontend engineers to address business development objectives. Managed critical campaigns including zakat, qurban, and wakaf.</p>
-                  <p><strong>Impact:</strong></p>
-                  <ul>
-                    <li>Time-Saving: Reduced manual processes from days to minutes, enabling the team to focus on more strategic tasks.</li>
-                    <li>Campaign Success: Ensured system stability during high-traffic periods, successfully supporting increased user engagement during Ramadan.</li>
-                  </ul>
-                  <p><strong></strong></p>
-                  <p><strong>Strengths:</strong></p>
-                  <ul>
-                    <li>Task Automation: Streamlined manual tasks, improving operational efficiency and speeding up campaign setups.</li>
-                    <li>Collaboration: Coordinated with frontend and business development teams to meet campaign requirements and deliver features on time.</li>
-                    <li>Monitoring & Scaling: Implemented real-time monitoring and scaled backend services to manage the surge in traffic during the 2023 and 2024 Ramadan campaigns.</li>
-                  </ul>
-                </div>
               </li>
             </ul>
 
