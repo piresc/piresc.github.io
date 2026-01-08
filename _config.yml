@@ -1,0 +1,19 @@
+title: piresc.
+description: Software Engineer Portfolio
+baseurl: ""
+url: ""
+
+markdown: kramdown
+theme: minima
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   padding: 4rem 0; /* Reduce the overall section padding */
 }
 
-.filters a {
+.buttons a {
   text-decoration: none;
   color: #000;
   display: inline-block;
@@ -29,11 +29,11 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   position: relative;
 }
 
-.filters a:hover, .filters a:focus, .filters a:active {
+.buttons a:hover, .buttons a:focus, .buttons a:active {
   text-decoration: none;
 }
 
-.filters a:hover:before {
+.buttons a:hover:before {
   content: "";
   position: absolute;
   left: 10px;
@@ -43,11 +43,11 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   background-color: #000;
 }
 
-.filters a.active {
+.buttons a.active {
   color: #000;
 }
 
-.filters a.active:before {
+.buttons a.active:before {
   content: "";
   position: absolute;
   left: 10px;
