@@ -36,6 +36,10 @@ layout: default
           <ul class="timeline">
             {% for item in site.data.experience %}
             <li style="padding-bottom: 20px;">
+              <!-- DEBUG -->
+              <p>Role: "{{ item.role }}"</p>
+              <!-- END DEBUG -->
+              
               <h4 class="h6">{{ item.role }}</h4>
               {% if item.location %}
               <p>{{ item.company }} | {{ item.location }} | {{ item.period }}</p>
@@ -58,7 +62,7 @@ layout: default
                   <ul>
                     {% for impact in project.impact %}
                       <li>{{ impact }}</li>
-                    {% endfor %}
+                      {% endfor %}
                   </ul>
                   {% endif %}
                   {% if project.strengths %}
@@ -66,7 +70,7 @@ layout: default
                   <ul>
                     {% for strength in project.strengths %}
                       <li>{{ strength }}</li>
-                    {% endfor %}
+                      {% endfor %}
                   </ul>
                   {% endif %}
                 </li>
