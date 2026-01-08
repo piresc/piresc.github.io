@@ -1,0 +1,102 @@
+work_experience:
+  - role: Software Engineer - Digital Fulfillment
+    company: Tokopedia
+    period: Jul 2022 - Aug 2024
+    location: Indonesia
+    summary: Managed digital fulfillment ecosystem for 4,000+ SKUs across 100+ suppliers, handling high-traffic microservices (>300 RPS). Maintained a 98% Fulfillment Success Rate through rigorous testing, proactive monitoring, and cross-team collaboration.
+    projects:
+      - id: fulfillmentDropdown
+        title: Fulfillment Nextgen
+        description: Fulfillment Nexgen is a project aimed at creating a new service that separates fulfillment processes from old codebase. This initiative was driven by complexity and difficulty in maintaining the current codebase, which also caused multiple teams to work on the same code, leading to challenges in debugging and integration testing.
+        impact:
+          - Development Efficiency: Reduced the time needed to develop new features.
+          - Testing Improvement: Simplified and expedited the integration testing process.
+          - Code Quality: Enhanced the readability and debugging of the code.
+          - Deployment Confidence: Enabled the team to deploy more confidently and efficiently.
+        strengths:
+          - Development: Contributed on service creation, covering migration, architecture, and patterns.
+          - Message Queuing: Implemented queuing for async processing, throttling promos vs. orders.
+          - Custom Interceptors: Built gRPC and DB interceptors to monitor latency and query performance.
+          - DB Retrier: Developed a custom retrier to reduce master usage and prevent slave lag.
+          - Feature Migration: Led the migration of void and auto-frozen features.
+          - Query Reminder: Implemented automated checks to ensure future database partitions are prepared.
+      - id: smartCardDropdown
+        title: Smart-Card Auto Escalation
+        description: Mandiri e-money is a leading smart-card payment method for digital services. According to Cex data, around 1% of users face errors when updating their card balance. These issues required manual support, wasting users' time and overburdening Tokopedia care. To resolve this, we developed an automated escalation feature.
+        impact:
+          - Support Efficiency: Automated escalation reduced customer support tickets by 60%.
+          - Cost Savings: Monthly savings reached tens of millions of rupiah through reduced operational costs.
+          - User Convenience: Users no longer had to manually report issues, improving their experience.
+        strengths:
+          - Collaboration: Worked closely with cross-functional teams for seamless project support.
+          - Feedback Mechanisms: Implemented feedback emails, categorizing responses into different actions.
+          - Tech Advancements: Developed modular, reusable code and facilitated migration to new microservices.
+      - id: performance
+        title: High-Performance & Cost Optimization
+        description: A comprehensive initiative to improve system latency, reliability, and cloud efficiency.
+        impact:
+          - Latency: Improved order fulfillment speed from 4s to 1s.
+          - Conversion: Achieved a 200% CVR improvement by optimizing caching strategies.
+          - Reliability: Eliminated Single Point of Failure (SPOF) by implementing auto-scaling for cron jobs.
+          - Cost: Reduced cloud infrastructure costs by refactoring specific services into a monolithic architecture.
+
+  - role: Software Engineer Intern
+    company: Tokopedia
+    period: Oct 2021 - Jun 2022
+    location: Indonesia
+    summary: Joined the team after being selected from 3,600+ applicants for intensive Tokopedia DevCamp training and completing a final 20-hour hackathon assessment. Worked alongside the engineering team to maintain 5+ microservices and support B2B client integrations.
+    projects:
+      - id: selfOnboardingDropdown
+        title: Partner Self-Onboarding
+        description: The Digital B2B team at Tokopedia needed a more efficient partner onboarding process. The manual process was time-consuming, involved multiple teams, and was prone to delays and errors. By introducing a self-onboarding feature, we streamlined the process, reduced manual work, and enabled faster, more reliable onboarding. This greatly improved operational efficiency.
+        impact:
+          - Reduced B2B client onboarding time by 80%.
+          - Cut integration time by 50%.
+          - Enabled partners to self-onboard, freeing up business, product, and tech teams.
+        strengths:
+          - Tech Requirements: Actively involved drafting of technological requirements for self-onboarding.
+          - Development: Involved in the development process, building and integrating the feature.
+          - Testing: Conducted thorough testing and bug fixes, collaborating with QA to ensure feature stability.
+      - id: internPerformance
+        title: System Resilience & Security
+        description: Implemented features to improve system stability and reduce burden on support teams.
+        impact:
+          - Rate Limiter: Developed a limiter that helped decrease invalid orders by 86%.
+          - Self-Refund: Built a feature that contributed to an 85% reduction in refund-related tickets.
+          - Migration: Assisted in migrating 1,000+ configuration lines to a more efficient database system.
+
+  - role: DevCamp 2021 Participant
+    company: Tokopedia
+    period: 2021
+    location: Indonesia
+    summary: Selected from over 3,600 applicants to participate in DevCamp's 6 day boot camp. Engaged in intensive training and received direct mentorship from Tokopedia tech experts. Contributed to a 20 hour hackathon, earning an internship at Tokopedia.
+    projects: []
+
+  - role: Developer
+    company: Apple Developer Academy
+    period: 2020
+    location: Indonesia
+    summary: Selected as one of 200 individuals from 2,500+ applicants across Indonesia. Built and shipped 7 iOS applications using Swift, acting as both Developer and Product Owner. Joined and contributed to the development of two macro projects, Videre (Mumu) and Lugna, simultaneously for three months.
+    projects:
+      - id: lugnaDropdown
+        title: Lugna Smart Journaling App
+        description: Lugna is a smart journaling app that enables users to pour their thoughts and feelings through journaling, which can be used as a form of communication between patients, caregivers, and psychiatrists. Lugna has personalized questions to guide users in journaling. Lugna also has stats to give overviews on users' moods weekly and monthly.
+        impact:
+          - Mental Health Support: Improved the journaling process, allowing users to better communicate their thoughts and emotions with caregivers and psychiatrists.
+          - User Engagement: Personalized questions guided users through journaling, leading to increased user interaction and more meaningful entries.
+          - Mood Tracking: Enabled users to track and understand their moods through weekly and monthly stats, contributing to better self-awareness and mental health management.
+        strengths:
+          - Research: Conducted interviews with mental health patients and experts to inform design decisions.
+          - UI/UX Design: Designed intuitive interfaces for iPhone, iPad, and the web.
+          - Testing: Led user testing to validate usability and effectiveness.
+      - id: videreMumuDropdown
+        title: Videre/Mumu AR App
+        description: Videre is an app that helps visual artists visualize and measure grid and artwork arrangements using Augmented Reality (AR). It is an advanced evolution of MUMU, which was originally developed to assist mural artists by simplifying the process of calculating grid sizes and overlaying them on reference designs with AR. Videre expands on these capabilities, offering an upgraded experience with enhanced creative tools and more advanced features for all visual artists.
+        impact:
+          - Creative Process Enhancement: Streamlined the process for visual and mural artists, reducing the time and effort required for grid calculation and design visualization.
+          - Increased Productivity: Enabled artists to easily arrange artwork using AR, improving their workflow and precision.
+          - Tool Adoption: Provided advanced creative tools, leading to broader adoption among various types of visual artists.
+        strengths:
+          - Development: Implemented MVC architecture, camera functions, and AR features.
+          - AR Integration: Improved the user experience by incorporating augmented reality.
+          - Cloud Integration: Built cloud save functionality using Core Data with CloudKit.

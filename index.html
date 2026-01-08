@@ -34,12 +34,8 @@ layout: default
           </p>
           <h3 class="h5 mb-3 mt-5">Work Experience</h3>
           <ul class="timeline">
-            {% for item in site.data.experience %}
+            {% for item in site.data.work_experience %}
             <li style="padding-bottom: 20px;">
-              <!-- DEBUG -->
-              <p>Role: "{{ item.role }}"</p>
-              <!-- END DEBUG -->
-              
               <h4 class="h6">{{ item.role }}</h4>
               {% if item.location %}
               <p>{{ item.company }} | {{ item.location }} | {{ item.period }}</p>
@@ -64,6 +60,22 @@ layout: default
                       <li>{{ impact }}</li>
                       {% endfor %}
                   </ul>
+                  {% endif %}
+                  {% if project.strengths %}
+                  <p><strong>Strengths:</strong></p>
+                  <ul>
+                    {% for strength in project.strengths %}
+                      <li>{{ strength }}</li>
+                      {% endfor %}
+                  </ul>
+                  {% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
                   {% endif %}
                   {% if project.strengths %}
                   <p><strong>Strengths:</strong></p>

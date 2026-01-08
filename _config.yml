@@ -6,6 +6,10 @@ url: ""
 markdown: kramdown
 theme: minima
 
+collections:
+  work_experience:
+    output: false
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
