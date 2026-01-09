@@ -46,27 +46,16 @@ layout: default
               <p>{{ item.summary }}</p>
               {% endif %}
               {% if item.projects %}
-              <p><strong></strong></p>
-              <p>Key Projects:</p>
+              <p class="mt-3"><em>Key Projects:</em></p>
               <ul>
                 {% for project in item.projects %}
                 <li>
-                  <h5>{{ project.title }}</h5>
-                  <p>{{ project.description }}</p>
+                  <strong>{{ project.title }}</strong> — {{ project.description }}
                   {% if project.impact %}
-                  <p><strong>Impact:</strong></p>
                   <ul>
                     {% for impact in project.impact %}
                       <li>{{ impact }}</li>
-                      {% endfor %}
-                  </ul>
-                  {% endif %}
-                  {% if project.strengths %}
-                  <p><strong>Strengths:</strong></p>
-                  <ul>
-                    {% for strength in project.strengths %}
-                      <li>{{ strength }}</li>
-                      {% endfor %}
+                    {% endfor %}
                   </ul>
                   {% endif %}
                 </li>
