@@ -48,10 +48,10 @@
     company: Tokopedia
     period: Oct 2021 - Jun 2022
     location: Indonesia
-    summary: Joined the team after being selected from 3,600+ applicants for intensive Tokopedia DevCamp training and completing a final 20-hour hackathon assessment. Worked alongside the engineering team to maintain 5+ microservices and support B2B client integrations.
+    summary: Developed and maintained 5+ microservices for Digital B2B products, created integration tests, applied clean architecture, managed client integrations, and integrated with new billers to scale business growth.
     projects:
       - title: Partner Self-Onboarding
-        description: The Digital B2B team at Tokopedia needed a more efficient partner onboarding process. The manual process was time-consuming, involved multiple teams, and was prone to delays and errors. By introducing a self-onboarding feature, we streamlined the process, reduced manual work, and enabled faster, more reliable onboarding. This greatly improved operational efficiency.
+        description: Built a self-onboarding feature to streamline the B2B partner onboarding process, replacing the manual multi-team workflow with an automated system.
         impact:
           - Reduced B2B client onboarding time by 80%.
           - Cut integration time by 50%.
@@ -76,14 +76,6 @@
     summary: Selected as one of 200 individuals from 2,500+ applicants across Indonesia. Built and shipped 7 iOS applications using Swift, acting as both Developer and Product Owner. Joined and contributed to the development of two macro projects, Videre (Mumu) and Lugna, simultaneously for three months.
     projects:
       - title: Lugna Smart Journaling App
-        description: Lugna is a smart journaling app that enables users to pour their thoughts and feelings through journaling, which can be used as a form of communication between patients, caregivers, and psychiatrists. Lugna has personalized questions to guide users in journaling. Lugna also has stats to give overviews on users' moods weekly and monthly.
-        impact:
-          - Improved the journaling process, allowing users to better communicate their thoughts and emotions with caregivers and psychiatrists.
-          - Personalized questions guided users through journaling, leading to increased user interaction and more meaningful entries.
-          - Enabled users to track and understand their moods through weekly and monthly stats, contributing to better self-awareness and mental health management.
+        description: A smart journaling app enabling users to express thoughts and emotions through guided journaling, serving as a communication tool between patients, caregivers, and psychiatrists.
       - title: Videre/Mumu AR App
-        description: Videre is an app that helps visual artists visualize and measure grid and artwork arrangements using Augmented Reality (AR). It is an advanced evolution of MUMU, which was originally developed to assist mural artists by simplifying the process of calculating grid sizes and overlaying them on reference designs with AR. Videre expands on these capabilities, offering an upgraded experience with enhanced creative tools and more advanced features for all visual artists.
-        impact:
-          - Streamlined the process for visual and mural artists, reducing the time and effort required for grid calculation and design visualization.
-          - Enabled artists to easily arrange artwork using AR, improving their workflow and precision.
-          - Provided advanced creative tools, leading to broader adoption among various types of visual artists.
+        description: An AR app helping visual artists visualize and measure grid and artwork arrangements using Augmented Reality, simplifying grid calculation and design overlay for mural artists and other visual creatives.

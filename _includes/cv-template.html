@@ -1,6 +1,6 @@
 <!-- Hidden CV Template for PDF Generation -->
 <div id="cv-template" style="display: none;">
-  <div class="cv-content" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; color: #333;">
+  <div class="cv-content" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 30px; color: #333;">
     <!-- Header -->
     <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #2c3e50; padding-bottom: 20px;">
       <h1 style="margin: 0; color: #2c3e50; font-size: 32px;">Pires Cerullo</h1>
@@ -26,11 +26,11 @@
     </div>
 
     <!-- Work Experience -->
-    <div style="margin-bottom: 30px;">
+    <div style="margin-bottom: 30px; page-break-inside: avoid;">
       <h2 style="color: #2c3e50; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid #ecf0f1; padding-bottom: 5px;">Work Experience</h2>
 
       {% for item in site.data.work_experience %}
-      <div style="margin-bottom: 20px;">
+      <div style="margin-bottom: 20px; page-break-inside: avoid;">
         <div style="display: flex; justify-content: space-between; align-items: baseline;">
           <h3 style="margin: 0; color: #34495e; font-size: 15px;">{{ item.role }}</h3>
           <span style="color: #7f8c8d; font-size: 12px; white-space: nowrap;">{{ item.period }}</span>
@@ -44,7 +44,7 @@
         {% if item.projects %}
         <div style="margin-top: 10px;">
           {% for project in item.projects %}
-          <div style="margin-bottom: 12px;">
+          <div style="margin-bottom: 12px; page-break-inside: avoid;">
             <p style="margin: 0; color: #2c3e50; font-size: 12px; font-weight: 600;">{{ project.title }}</p>
             <p style="margin: 3px 0 0 0; font-size: 11px; line-height: 1.5; color: #555;">{{ project.description }}</p>
             {% if project.impact %}
@@ -63,11 +63,11 @@
     </div>
 
     <!-- Education -->
-    <div style="margin-bottom: 30px;">
+    <div style="margin-bottom: 30px; page-break-inside: avoid;">
       <h2 style="color: #2c3e50; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid #ecf0f1; padding-bottom: 5px;">Education</h2>
 
       {% for item in site.data.education %}
-      <div style="margin-bottom: 15px;">
+      <div style="margin-bottom: 15px; page-break-inside: avoid;">
         <div style="display: flex; justify-content: space-between; align-items: baseline;">
           <h3 style="margin: 0; color: #34495e; font-size: 15px;">{{ item.degree }}</h3>
           <span style="color: #7f8c8d; font-size: 12px; white-space: nowrap;">{{ item.period }}</span>
@@ -80,11 +80,11 @@
     </div>
 
     <!-- Skills -->
-    <div>
+    <div style="page-break-inside: avoid;">
       <h2 style="color: #2c3e50; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid #ecf0f1; padding-bottom: 5px;">Skills & Tools</h2>
 
       {% for skill_category in site.data.skills %}
-      <div style="margin-bottom: 10px;">
+      <div style="margin-bottom: 10px; page-break-inside: avoid;">
         <p style="margin: 0; color: #2c3e50; font-size: 12px; font-weight: 600;">{{ skill_category.category }}:</p>
         <p style="margin: 3px 0 0 0; font-size: 12px; line-height: 1.5; color: #555;">{{ skill_category.skills }}</p>
       </div>

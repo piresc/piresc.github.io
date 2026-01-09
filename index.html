@@ -131,7 +131,7 @@ layout: default
 
     // PDF configuration
     const opt = {
-      margin: [10, 10, 10, 10],
+      margin: [8, 8, 8, 8],
       filename: 'pires-cerullo-cv.pdf',
       image: { type: 'jpeg', quality: 0.98 },
       html2canvas: {
@@ -139,13 +139,14 @@ layout: default
         useCORS: true,
         letterRendering: true,
         scrollY: 0,
-        logging: true
+        logging: false
       },
       jsPDF: {
         unit: 'mm',
         format: 'a4',
         orientation: 'portrait'
-      }
+      },
+      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
     };
 
     // Small delay to ensure content is rendered
