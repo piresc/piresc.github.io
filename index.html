@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<!-- Include CV Template -->
+{% include cv-template.html %}
+
 <main id="main">
   <section class="section site-portfolio no-bottom-padding">
     <div class="container">
@@ -92,8 +95,71 @@ layout: default
 
   <div class="container text-center my-4">
     <div id="buttons" class="buttons">
-      <a href="https://piresc-s3.s3.ap-southeast-1.amazonaws.com/piresc-cv.pdf" target="_blank">Download CV</a>
+      <a href="#" id="download-cv-btn" onclick="generateCV(event); return false;">Download CV</a>
     </div>
   </div>
 
 </main>
+
+<!-- html2pdf.js Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<!-- PDF Generation Script -->
+<script>
+  function generateCV(event) {
+    event.preventDefault();
+
+    // Get the CV template content
+    const cvTemplate = document.getElementById('cv-template');
+    const cvContent = cvTemplate.querySelector('.cv-content');
+
+    // Clone the content and make it visible
+    const tempContainer = document.createElement('div');
+    tempContainer.style.position = 'fixed';
+    tempContainer.style.left = '0';
+    tempContainer.style.top = '0';
+    tempContainer.style.zIndex = '9999';
+    tempContainer.style.backgroundColor = 'white';
+    tempContainer.style.padding = '20px';
+    tempContainer.style.overflow = 'auto';
+
+    // Clone the CV content
+    const clonedContent = cvContent.cloneNode(true);
+    clonedContent.style.display = 'block';
+    tempContainer.appendChild(clonedContent);
+    document.body.appendChild(tempContainer);
+
+    // PDF configuration
+    const opt = {
+      margin: [10, 10, 10, 10],
+      filename: 'pires-cerullo-cv.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: {
+        scale: 2,
+        useCORS: true,
+        letterRendering: true,
+        scrollY: 0,
+        logging: true
+      },
+      jsPDF: {
+        unit: 'mm',
+        format: 'a4',
+        orientation: 'portrait'
+      }
+    };
+
+    // Small delay to ensure content is rendered
+    setTimeout(() => {
+      // Generate and download PDF
+      html2pdf().set(opt).from(clonedContent).save().then(() => {
+        document.body.removeChild(tempContainer);
+      }).catch((error) => {
+        console.error('PDF generation error:', error);
+        alert('Error generating PDF. Please try again or use the S3 link.');
+        document.body.removeChild(tempContainer);
+        // Fallback to S3 link if PDF generation fails
+        window.open('https://piresc-s3.s3.ap-southeast-1.amazonaws.com/piresc-cv.pdf', '_blank');
+      });
+    }, 100);
+  }
+</script>

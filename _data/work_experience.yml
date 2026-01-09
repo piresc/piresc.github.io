@@ -1,4 +1,4 @@
-  - role: Developer
+  - role: Software Engineer
     company: Telkomsel
     period: Oct 2024 - Present
     location: Indonesia
@@ -24,14 +24,14 @@
     summary: Managed digital fulfillment ecosystem for 4,000+ SKUs across 100+ suppliers, handling high-traffic microservices (>300 RPS). Maintained a 98% Fulfillment Success Rate through rigorous testing, proactive monitoring, and cross-team collaboration.
     projects:
       - title: Fulfillment Nextgen
-        description: Fulfillment Nexgen is a project aimed at creating a new service that separates fulfillment processes from old codebase. This initiative was driven by complexity and difficulty in maintaining the current codebase, which also caused multiple teams to work on the same code, leading to challenges in debugging and integration testing.
+        description: Fulfillment Nextgen is a project aimed at creating a new service that separates fulfillment processes from old codebase. This initiative was driven by complexity and difficulty in maintaining the current codebase, which also caused multiple teams to work on the same code, leading to challenges in debugging and integration testing.
         impact:
           - Reduced the time needed to develop new features.
           - Simplified and expedited the integration testing process.
           - Enhanced the readability and debugging of the code.
           - Enabled the team to deploy more confidently and efficiently.
       - title: Smart-Card Auto Escalation
-        description: Mandiri e-money is a leading smart-card payment method for digital services. According to Cex data, around 1% of users face errors when updating their card balance. These issues required manual support, wasting users' time and overburdening Tokopedia care. To resolve this, we developed an automated escalation feature.
+        description: Mandiri e-money is a leading smart-card payment method for digital services. According to CX data, around 1% of users face errors when updating their card balance. These issues required manual support, wasting users' time and overburdening Tokopedia care. To resolve this, we developed an automated escalation feature.
         impact:
           - Automated escalation reduced customer support tickets by 60%.
           - Monthly savings reached tens of millions of rupiah through reduced operational costs.
@@ -67,7 +67,7 @@
         impact:
           - Selected from over 3,600 applicants to participate in DevCamp's 6 day boot camp.
           - Engaged in intensive training and received direct mentorship from Tokopedia tech experts.
-          - Participate in 20 hour hackathon, earning an internship at Tokopedia.
+          - Participated in 20 hour hackathon, earning an internship at Tokopedia.
 
   - role: Developer
     company: Apple Developer Academy

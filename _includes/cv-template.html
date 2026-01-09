@@ -1,0 +1,94 @@
+<!-- Hidden CV Template for PDF Generation -->
+<div id="cv-template" style="display: none;">
+  <div class="cv-content" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px; color: #333;">
+    <!-- Header -->
+    <div style="text-align: center; margin-bottom: 30px; border-bottom: 2px solid #2c3e50; padding-bottom: 20px;">
+      <h1 style="margin: 0; color: #2c3e50; font-size: 32px;">Pires Cerullo</h1>
+      <p style="margin: 10px 0 0 0; color: #7f8c8d; font-size: 14px;">
+        Software Engineer | Backend Development Specialist
+      </p>
+      <p style="margin: 5px 0 0 0; color: #7f8c8d; font-size: 12px;">
+        <a href="https://linkedin.com/in/pires-cerullo/" style="color: #3498db; text-decoration: none;">linkedin.com/in/pires-cerullo</a> |
+        <a href="https://github.com/piresc" style="color: #3498db; text-decoration: none;">github.com/piresc</a>
+      </p>
+    </div>
+
+    <!-- About Me -->
+    <div style="margin-bottom: 30px;">
+      <h2 style="color: #2c3e50; font-size: 18px; margin-bottom: 10px; border-bottom: 1px solid #ecf0f1; padding-bottom: 5px;">About Me</h2>
+      <p style="font-size: 13px; line-height: 1.6; margin: 0;">
+        A software engineer with over 3 years of experience, specializing in backend development.
+        The focus is on designing and delivering efficient, reliable systems, overseeing projects from planning to deployment.
+        Expertise includes improving system performance and optimizing processes to ensure smooth operations.
+        With a strong understanding of the development cycle, the approach emphasizes quality, problem-solving,
+        and continuous improvement, contributing effectively to the success of each project.
+      </p>
+    </div>
+
+    <!-- Work Experience -->
+    <div style="margin-bottom: 30px;">
+      <h2 style="color: #2c3e50; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid #ecf0f1; padding-bottom: 5px;">Work Experience</h2>
+
+      {% for item in site.data.work_experience %}
+      <div style="margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <h3 style="margin: 0; color: #34495e; font-size: 15px;">{{ item.role }}</h3>
+          <span style="color: #7f8c8d; font-size: 12px; white-space: nowrap;">{{ item.period }}</span>
+        </div>
+        <p style="margin: 3px 0 5px 0; color: #2c3e50; font-size: 13px; font-weight: 500;">{{ item.company }}{% if item.location %} | {{ item.location }}{% endif %}</p>
+
+        {% if item.summary %}
+        <p style="margin: 8px 0; font-size: 12px; line-height: 1.5;">{{ item.summary }}</p>
+        {% endif %}
+
+        {% if item.projects %}
+        <div style="margin-top: 10px;">
+          {% for project in item.projects %}
+          <div style="margin-bottom: 12px;">
+            <p style="margin: 0; color: #2c3e50; font-size: 12px; font-weight: 600;">{{ project.title }}</p>
+            <p style="margin: 3px 0 0 0; font-size: 11px; line-height: 1.5; color: #555;">{{ project.description }}</p>
+            {% if project.impact %}
+            <ul style="margin: 5px 0 0 0; padding-left: 18px;">
+              {% for impact in project.impact %}
+              <li style="font-size: 11px; line-height: 1.4; color: #666; margin-bottom: 2px;">{{ impact }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Education -->
+    <div style="margin-bottom: 30px;">
+      <h2 style="color: #2c3e50; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid #ecf0f1; padding-bottom: 5px;">Education</h2>
+
+      {% for item in site.data.education %}
+      <div style="margin-bottom: 15px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <h3 style="margin: 0; color: #34495e; font-size: 15px;">{{ item.degree }}</h3>
+          <span style="color: #7f8c8d; font-size: 12px; white-space: nowrap;">{{ item.period }}</span>
+        </div>
+        <p style="margin: 3px 0 5px 0; color: #2c3e50; font-size: 13px;">{{ item.institution }}{% if item.location %} | {{ item.location }}{% endif %}</p>
+        <p style="margin: 3px 0 0 0; color: #7f8c8d; font-size: 12px;">{{ item.gpa }}</p>
+        <p style="margin: 5px 0 0 0; font-size: 11px; line-height: 1.5; font-style: italic; color: #555;">Thesis: {{ item.thesis }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Skills -->
+    <div>
+      <h2 style="color: #2c3e50; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid #ecf0f1; padding-bottom: 5px;">Skills & Tools</h2>
+
+      {% for skill_category in site.data.skills %}
+      <div style="margin-bottom: 10px;">
+        <p style="margin: 0; color: #2c3e50; font-size: 12px; font-weight: 600;">{{ skill_category.category }}:</p>
+        <p style="margin: 3px 0 0 0; font-size: 12px; line-height: 1.5; color: #555;">{{ skill_category.skills }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
