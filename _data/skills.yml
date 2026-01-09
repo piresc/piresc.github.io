@@ -1,34 +1,10 @@
-- Go/Golang
-- NSQ
-- Redis
-- NewRelic
-- SQL
-- gRPC
-- REST
-- AWS
-- GIT
-- Linux
-- Docker
-- GQL
-- iOS
-- Swift
-- Microservices
-- Distributed Systems
-- API
-- Cloud Services
-- SDLC
-- Distributed Services
-- Messaging Queues
-- Caching
-- Application performance monitoring (APM)
-- "Observability: Logging, monitoring and alerting"
-- Software Development Life Cycle (SDLC)
-- Database System
-- Teamwork skills
-- Leadership
-- Effective collaboration
-- Cross team functionality
-- Analytical skills
-- Troubleshooting
-- Debugging
-- Project timelines
+- category: Programming Languages
+  skills: Go (Golang), Node.js, JavaScript, Swift, SQL
+- category: Backend & Data
+  skills: Microservices, Clean Architecture, REST, gRPC, PostgreSQL, MySQL, Redis, NATS, RabbitMQ
+- category: Infrastructure & Cloud
+  skills: AWS, GCP, Kubernetes, Docker, GitLab CI/CD, Linux
+- category: Observability & Quality
+  skills: DataDog, Splunk, New Relic, SonarQube
+- category: Core Competencies
+  skills: Technical Leadership, System Design, SDLC, Cross-Team Collaboration

@@ -81,12 +81,10 @@ layout: default
             {% endfor %}
           </ul>
 
-          <h3 class="h5 mb-3 mt-5">Skills</h3>
-          <div class="skill-tags">
-            {% for skill in site.data.skills %}
-            <span class="skill-tag">{{ skill }}</span>
-            {% endfor %}
-          </div>
+          <h3 class="h5 mb-3 mt-5">Skills & Tools</h3>
+          {% for skill_category in site.data.skills %}
+          <p><strong>{{ skill_category.category }}:</strong> {{ skill_category.skills }}</p>
+          {% endfor %}
         </div>
       </div>
     </div>
