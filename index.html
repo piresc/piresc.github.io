@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<!-- Include CV Template -->
-{% include cv-template.html %}
+<!-- Include Compact CV Template -->
+{% include cv-template-compact.html %}
 
 <main id="main">
   <section class="section site-portfolio no-bottom-padding">
@@ -109,8 +109,8 @@ layout: default
   function generateCV(event) {
     event.preventDefault();
 
-    // Get the CV template content
-    const cvTemplate = document.getElementById('cv-template');
+    // Get the compact CV template content
+    const cvTemplate = document.getElementById('cv-template-compact');
     const cvContent = cvTemplate.querySelector('.cv-content');
 
     // Clone the content and make it visible
