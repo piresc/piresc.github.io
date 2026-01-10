@@ -15,11 +15,7 @@
     <div style="margin-bottom: 18px;">
       <h2 style="color: #2c3e50; font-size: 15px; margin-bottom: 6px; border-bottom: 1px solid #ecf0f1; padding-bottom: 3px;">About Me</h2>
       <p style="font-size: 11px; line-height: 1.4; margin: 0;">
-        A software engineer with over 3 years of experience, specializing in backend development.
-        The focus is on designing and delivering efficient, reliable systems, overseeing projects from planning to deployment.
-        Expertise includes improving system performance and optimizing processes to ensure smooth operations.
-        With a strong understanding of the development cycle, the approach emphasizes quality, problem-solving,
-        and continuous improvement, contributing effectively to the success of each project.
+        {{ site.data.about.about }}
       </p>
     </div>
 
@@ -74,7 +70,9 @@
     <div style="page-break-inside: avoid;">
       <h2 style="color: #2c3e50; font-size: 15px; margin-bottom: 10px; border-bottom: 1px solid #ecf0f1; padding-bottom: 3px;">Skills & Tools</h2>
       <p style="margin: 0; font-size: 10px; line-height: 1.4; color: #555;">
-        Go (Golang), Node.js, JavaScript, Swift, SQL, Microservices, Clean Architecture, REST, gRPC, PostgreSQL, MySQL, Redis, NATS, RabbitMQ, AWS, GCP, Kubernetes, Docker, GitLab CI/CD, Linux, DataDog, Splunk, New Relic, SonarQube, Technical Leadership, System Design, SDLC, Cross-Team Collaboration
+        {% for skill_category in site.data.skills %}
+          {{ skill_category.skills }}{% if forloop.last == false %}, {% endif %}
+        {% endfor %}
       </p>
     </div>
   </div>
