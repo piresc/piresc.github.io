@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { workExperience } from "@/data/work-experience";
+import { motion } from 'framer-motion';
+import { workExperience } from '@/data/work-experience';
 
-export default function ExperienceSection() {
+export function WorkTimeline() {
   return (
-    <section id="experience" className="py-24 md:py-32 px-6 max-w-6xl mx-auto border-t border-neutral-800">
+    <section className="py-24 md:py-32 px-6 max-w-6xl mx-auto border-t border-neutral-800">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

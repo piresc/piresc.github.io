@@ -5,44 +5,39 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "Home", id: "home" },
-  { name: "Experience", id: "experience" },
-  { name: "Education", id: "education" },
-  { name: "Skills", id: "skills" },
-  { name: "Certifications", id: "certifications" },
-  { name: "Contact", id: "contact" },
+  { name: "experience", id: "experience" },
+  { name: "education", id: "education" },
+  { name: "skills", id: "skills" },
+  { name: "contact", id: "contact" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToSection = (id: string) => {
+  const scrollTo = (id: string) => {
     setIsOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <motion.nav
-      initial={{ y: -100, opacity: 0 }}
+      initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[#0a0a0a]/90 border-b border-white/10"
+      transition={{ duration: 0.4 }}
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-black/80 border-b border-neutral-800"
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="px-6 max-w-6xl mx-auto py-6">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-[#64ffda]">
-            piresc<span className="text-white">.</span>
-          </div>
+          <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-xl font-extralight lowercase tracking-tight hover:opacity-70 transition-opacity">
+            .piresc
+          </button>
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <button
                 key={link.id}
-                onClick={() => scrollToSection(link.id)}
-                className="py-3 px-6 font-medium text-gray-300 hover:text-[#64ffda] hover:bg-[#64ffda]/10 rounded-lg transition-all"
+                onClick={() => scrollTo(link.id)}
+                className="text-sm lowercase text-neutral-500 hover:text-white transition-colors duration-200"
               >
                 {link.name}
               </button>
@@ -51,10 +46,10 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white p-2"
+            className="md:hidden text-white p-2 hover:opacity-70 transition-opacity"
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
@@ -63,13 +58,13 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden mt-4 space-y-3"
+            className="md:hidden mt-4 space-y-2"
           >
             {navLinks.map((link) => (
               <button
                 key={link.id}
-                onClick={() => scrollToSection(link.id)}
-                className="w-full text-left py-4 px-6 font-medium text-gray-300 hover:text-[#64ffda] hover:bg-[#64ffda]/10 rounded-lg transition-all text-lg"
+                onClick={() => scrollTo(link.id)}
+                className="block w-full text-left py-3 px-4 lowercase text-neutral-400 hover:text-white transition-colors"
               >
                 {link.name}
               </button>

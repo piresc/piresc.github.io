@@ -1,83 +1,66 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { itemVariants } from "@/lib/animations";
 import { about, socialLinks } from "@/data/about";
-import { Download, Linkedin, Github, FileText, Globe, Instagram } from "lucide-react";
+import { Linkedin, Github, FileText, Globe, Instagram } from "lucide-react";
 
 const socialIcons = [
-  { name: "LinkedIn", icon: Linkedin, href: socialLinks.linkedin },
-  { name: "GitHub", icon: Github, href: socialLinks.github },
-  { name: "Medium", icon: FileText, href: socialLinks.medium },
-  { name: "Behance", icon: Globe, href: socialLinks.behance },
-  { name: "Instagram", icon: Instagram, href: socialLinks.instagram },
+  { name: "linkedin", icon: Linkedin, href: socialLinks.linkedin },
+  { name: "github", icon: Github, href: socialLinks.github },
+  { name: "medium", icon: FileText, href: socialLinks.medium },
+  { name: "behance", icon: Globe, href: socialLinks.behance },
+  { name: "instagram", icon: Instagram, href: socialLinks.instagram },
 ];
 
 export default function HeroSection() {
-  const name = "Pires Cerullo";
-
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-20">
-      <div className="max-w-4xl mx-auto w-full">
-        <motion.div variants={itemVariants} className="mb-6">
-          <span className="mono-text text-[#64ffda] text-lg">Hello, I&apos;m</span>
-        </motion.div>
+    <section id="home" className="min-h-screen flex items-center px-6 max-w-6xl mx-auto pt-32">
+      <div className="w-full">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="text-sm text-neutral-500 lowercase before:content-['.']"
+        >
+          software engineer
+        </motion.p>
 
-        <motion.h1 variants={itemVariants} className="text-6xl md:text-8xl font-bold mb-8 text-gray-100">
-          {name.split("").map((char, i) => (
-            <motion.span
-              key={i}
-              custom={i}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: (i: number) => ({ opacity: 1, transition: { delay: i * 0.03 } }),
-              }}
-              initial="hidden"
-              animate="visible"
-            >
-              {char === " " ? "\u00A0" : char}
-            </motion.span>
-          ))}
-          <span className="text-[#64ffda]">.</span>
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
+          className="text-[clamp(3rem,10vw,8rem)] leading-none font-extralight tracking-tight mt-8 mb-6"
+        >
+          pires cerullo
         </motion.h1>
 
-        <motion.p variants={itemVariants} className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl leading-relaxed">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          className="text-base md:text-lg text-neutral-400 max-w-3xl leading-relaxed mt-8"
+        >
           {about}
         </motion.p>
 
-        <motion.div variants={itemVariants} className="flex flex-wrap gap-8 mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="flex flex-wrap gap-6 mt-12"
+        >
           {socialIcons.map((social) => (
-            <motion.a
+            <a
               key={social.name}
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.name}
-              whileHover={{ scale: 1.2, rotate: 5 }}
-              whileTap={{ scale: 0.9 }}
-              className="text-gray-400 hover:text-[#64ffda] transition-colors"
+              className="text-neutral-600 hover:text-white transition-colors duration-200"
             >
-              <social.icon size={28} />
-            </motion.a>
+              <social.icon size={20} strokeWidth={1.5} />
+            </a>
           ))}
-        </motion.div>
-
-        <motion.div variants={itemVariants} className="flex flex-wrap gap-6">
-          <button
-            onClick={() => document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })}
-            className="px-10 py-4 bg-transparent border-2 border-[#64ffda] text-[#64ffda] rounded-lg font-medium hover:bg-[#64ffda]/10 transition-colors"
-          >
-            View Experience
-          </button>
-          <a
-            href={socialLinks.cv}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-10 py-4 bg-[#64ffda] text-[#0a0a0b] rounded-lg font-medium hover:bg-[#64ffda]/80 transition-colors flex items-center gap-2"
-          >
-            <Download size={20} />
-            Download CV
-          </a>
         </motion.div>
       </div>
     </section>

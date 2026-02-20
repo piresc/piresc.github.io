@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import PageTransition from "@/components/PageTransition";
 
@@ -8,14 +8,9 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "piresc. - Software Engineer Portfolio",
-  description: "Results-driven Software Engineer with a proven track record of building scalable solutions",
+  title: "piresc. — software engineer",
+  description: "software engineer focused on building scalable, reliable systems",
   icons: {
     icon: "/favicon.svg",
   },
@@ -28,9 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased text-[#e6e6e6]`}
-      >
+      <body className={`${inter.variable} font-sans antialiased`}>
         <PageTransition>{children}</PageTransition>
       </body>
     </html>
