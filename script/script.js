@@ -1,4 +1,0 @@
-function toggleDropdown(dropdownId) {
-    const dropdown = document.getElementById(dropdownId);
-    dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
-  }
