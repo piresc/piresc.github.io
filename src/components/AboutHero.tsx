@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { about } from '@/data/about';
 
 export function AboutHero() {
   return (
@@ -21,7 +20,6 @@ export function AboutHero() {
         transition={{ duration: 0.4, delay: 0.1 }}
         className="text-[clamp(1.25rem,3vw,2rem)] leading-relaxed font-extralight text-neutral-400 max-w-3xl"
       >
-        {about}
       </motion.h2>
     </section>
   );

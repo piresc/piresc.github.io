@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { about, socialLinks } from "@/data/about";
+import { aboutPhrases, socialLinks } from "@/data/about";
 import { Linkedin, Github, FileText, Globe, Instagram } from "lucide-react";
 
 const socialIcons = [
@@ -22,7 +22,7 @@ export default function HeroSection() {
           transition={{ duration: 0.4 }}
           className="text-sm text-neutral-500 lowercase before:content-['.']"
         >
-          software engineer
+          nice to meet you
         </motion.p>
 
         <motion.h1
@@ -34,14 +34,19 @@ export default function HeroSection() {
           pires cerullo
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
-          className="text-base md:text-lg text-neutral-400 max-w-3xl leading-relaxed mt-8"
-        >
-          {about}
-        </motion.p>
+        <div className="text-base md:text-lg text-neutral-400 max-w-3xl leading-relaxed mt-8">
+          {aboutPhrases.map((phrase, i) => (
+            <motion.span
+              key={i}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4, delay: 0.2 + i * 0.15 }}
+            >
+              {phrase}
+              {i < aboutPhrases.length - 1 && " · "}
+            </motion.span>
+          ))}
+        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

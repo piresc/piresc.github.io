@@ -1,4 +1,9 @@
-export const about = "A software engineer with over 3 years of experience, specializing in backend development. Focused on designing and delivering efficient, reliable systems, overseeing projects from planning to deployment. Expertise includes improving system performance and optimizing processes to ensure smooth operations. With a strong understanding of the development cycle, the approach emphasizes quality, problem-solving, and continuous improvement.";
+export const aboutPhrases = [
+  "Backend Engineering",
+  "Cloud Architecture",
+  "UI/UX Design",
+  "Photography"
+];
 
 export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/pires-cerullo/",
