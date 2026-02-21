@@ -15,7 +15,7 @@ export interface WorkExperience {
 
 export const workExperience: WorkExperience[] = [
   {
-    role: "Developer",
+    role: "Software Engineer",
     company: "Telkomsel",
     period: "Oct 2024 - Present",
     location: "Indonesia",
@@ -42,9 +42,9 @@ export const workExperience: WorkExperience[] = [
     ]
   },
   {
-    role: "Software Engineer - Digital Fulfillment",
+    role: "Software Engineer",
     company: "Tokopedia",
-    period: "Jul 2022 - Aug 2024",
+    period: "Oct 2021 - Aug 2024",
     location: "Indonesia",
     summary: "Managed digital fulfillment ecosystem for 4,000+ SKUs across 100+ suppliers, handling high-traffic microservices (>300 RPS). Maintained a 98% Fulfillment Success Rate through rigorous testing, proactive monitoring, and cross-team collaboration.",
     projects: [
@@ -76,42 +76,6 @@ export const workExperience: WorkExperience[] = [
           "Eliminated Single Point of Failure (SPOF) by implementing auto-scaling for cron jobs.",
           "Reduced cloud infrastructure costs by refactoring specific services into a monolithic architecture.",
           "Ensured smooth operations for the 2023 and 2024 Ramadan campaigns."
-        ]
-      }
-    ]
-  },
-  {
-    role: "Software Engineer - Digital B2B",
-    company: "Tokopedia",
-    period: "Oct 2021 - Jun 2022",
-    location: "Indonesia",
-    summary: "Developed and maintained 5+ microservices for Digital B2B products, created integration tests, applied clean architecture, managed client integrations, and integrated with new billers to scale business growth.",
-    projects: [
-      {
-        title: "Partner Self-Onboarding",
-        description: "Built a self-onboarding feature to streamline the B2B partner onboarding process, replacing the manual multi-team workflow with an automated system.",
-        impact: [
-          "Reduced B2B client onboarding time by 80%.",
-          "Cut integration time by 50%.",
-          "Enabled partners to self-onboard, freeing up business, product, and tech teams."
-        ]
-      },
-      {
-        title: "System Resilience & Security",
-        description: "Implemented features to improve system stability and reduce burden on support teams.",
-        impact: [
-          "Developed a rate limiter that decreased invalid orders by 86%.",
-          "Built a self-refund feature contributing to an 85% reduction in refund-related tickets.",
-          "Migrated over 1,000 configuration lines to a more efficient database system."
-        ]
-      },
-      {
-        title: "DevCamp 2021 Participant",
-        description: "Tokopedia DevCamp is a 6-day intensive training program held by Tokopedia to improve the quality of local Indonesian talent.",
-        impact: [
-          "Selected from over 3,600 applicants to participate in DevCamp's 6 day boot camp.",
-          "Engaged in intensive training and received direct mentorship from Tokopedia tech experts.",
-          "Contributed to a 20 hour hackathon, earning an internship at Tokopedia."
         ]
       }
     ]

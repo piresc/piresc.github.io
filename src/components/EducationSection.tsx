@@ -27,10 +27,6 @@ export default function EducationSection() {
             <p className="text-sm text-neutral-600 mb-3">{edu.period}</p>
             <h3 className="text-[clamp(1.5rem,4vw,2.5rem)] leading-tight font-light mb-2">{edu.degree}</h3>
             <p className="text-base md:text-lg text-neutral-400">{edu.institution} · {edu.location}</p>
-            <p className="text-sm text-neutral-500 mt-3">{edu.gpa}</p>
-            {edu.thesis && (
-              <p className="text-sm text-neutral-600 mt-1">thesis: {edu.thesis}</p>
-            )}
           </motion.div>
         ))}
       </div>
