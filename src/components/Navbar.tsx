@@ -1,46 +1,46 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { motion } from "framer-motion";
 
 const navLinks = [
-  { name: "experience", id: "experience" },
-  { name: "education", id: "education" },
-  { name: "skills", id: "skills" },
-  { name: "contact", id: "contact" },
+  { name: "projects", href: "/projects" },
+  { name: "about", href: "/about" },
+  { name: "contact", href: "/contact" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
-  const scrollTo = (id: string) => {
-    setIsOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
+  const pathname = usePathname();
 
   return (
-    <motion.nav
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.4 }}
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-black/80 border-b border-neutral-800"
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-black/80 border-b border-neutral-800">
       <div className="px-6 max-w-6xl mx-auto py-6">
         <div className="flex items-center justify-between">
-          <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-xl font-extralight lowercase tracking-tight hover:opacity-70 transition-opacity">
+          <Link href="/" className="text-xl font-extralight lowercase tracking-tight hover:opacity-70 transition-opacity">
             .piresc
-          </button>
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollTo(link.id)}
-                className="text-sm lowercase text-neutral-500 hover:text-white transition-colors duration-200"
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`text-sm lowercase transition-colors duration-200 relative ${
+                  pathname === link.href ? "text-white" : "text-neutral-500 hover:text-white"
+                }`}
               >
                 {link.name}
-              </button>
+                {pathname === link.href && (
+                  <motion.div
+                    layoutId="underline"
+                    className="absolute -bottom-1 left-0 right-0 h-px bg-white"
+                  />
+                )}
+              </Link>
             ))}
           </div>
 
@@ -61,17 +61,20 @@ export default function Navbar() {
             className="md:hidden mt-4 space-y-2"
           >
             {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollTo(link.id)}
-                className="block w-full text-left py-3 px-4 lowercase text-neutral-400 hover:text-white transition-colors"
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className={`block w-full text-left py-3 px-4 lowercase transition-colors ${
+                  pathname === link.href ? "text-white" : "text-neutral-400 hover:text-white"
+                }`}
               >
                 {link.name}
-              </button>
+              </Link>
             ))}
           </motion.div>
         )}
       </div>
-    </motion.nav>
+    </nav>
   );
 }
