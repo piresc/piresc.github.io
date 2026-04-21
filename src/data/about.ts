@@ -1,10 +1,3 @@
-export const aboutPhrases = [
-  "Backend Engineering",
-  "Cloud Architecture",
-  "UI/UX Design",
-  "Photography"
-];
-
 export const socialLinks = {
   linkedin: "https://www.linkedin.com/in/pires-cerullo/",
   github: "https://github.com/piresc",
@@ -12,5 +5,13 @@ export const socialLinks = {
   behance: "https://www.behance.net/piresc",
   instagram: "https://www.instagram.com/piresc.capture/",
   email: "mailto:piresc.dev@gmail.com",
-  cv: "https://piresc-s3.s3.ap-southeast-1.amazonaws.com/piresc-cv.pdf"
+  cv: "/piresc-cv.pdf"
 };
+
+export const socialProfiles = [
+  { name: 'LinkedIn', href: socialLinks.linkedin },
+  { name: 'GitHub', href: socialLinks.github },
+  { name: 'Medium', href: socialLinks.medium },
+  { name: 'Behance', href: socialLinks.behance },
+  { name: 'Instagram', href: socialLinks.instagram },
+] as const;
