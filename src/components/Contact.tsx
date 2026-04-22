@@ -61,7 +61,7 @@ export default function Contact() {
           className="text-center mt-16 pt-8 border-t border-[var(--border)]"
         >
           <p className="text-sm tone-subtle">
-            © {new Date().getFullYear()} piresc.github.io
+            © {new Date().getFullYear()} piresc.dev
           </p>
         </motion.div>
       </div>

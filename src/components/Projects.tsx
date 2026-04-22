@@ -4,7 +4,7 @@ import { projects, workExperience, type Project } from '../data/portfolio';
 import { useRef } from 'react';
 import { getScaleInMotion, motionEase } from '../lib/motion';
 
-const videoUrl = 'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260406_133058_0504132a-0cf3-4450-a370-8ea3b05c95d4.mp4';
+const videoUrl = '/videos/projects.mp4';
 
 function ProjectCard({
   number,

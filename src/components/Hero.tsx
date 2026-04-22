@@ -3,8 +3,7 @@ import { ArrowRight } from 'lucide-react';
 import { useRef } from 'react';
 import { socialLinks } from '../data/about';
 
-const videoUrl = 'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4';
-
+const videoUrl = '/videos/hero.mp4';
 const navItems = [
   { label: 'Work', href: '#projects' },
   { label: 'About', href: '#about' },
